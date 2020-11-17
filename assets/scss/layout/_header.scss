@@ -1,8 +1,39 @@
 .nav {
-  @media #{$info-phone} {
+    @media #{$info-phone} {}
+    @media screen and (max-width: 767px) {}
+}
 
-  }
-  @media screen and (max-width: 767px){
+// linear-gradient(#c9923b, #dab279);
+header {
+    background: #404040;
+    height: 100px;
+}
 
-  }
+.menu {
+    display: flex;
+    &__img {
+        img {
+            padding: 1rem;
+        }
+    }
+    &__nav {
+        font-size: 14px;
+        color: #f0dede;
+        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
+        a {
+            color: #ffffff;
+            display: inline-block;
+            padding: 2.39rem 1rem;
+            &:hover {
+                color: #ffffff;
+                border-bottom: 3px solid #c9923b;
+            }
+        }
+    }
+    &__fas {
+        color: #c9923b;
+        padding: 2.39rem 2rem;
+    }
 }
