@@ -1,0 +1,85 @@
+.mySlides {
+    display: none
+}
+
+.w3-left,
+.w3-right,
+.w3-badge {
+    cursor: pointer
+}
+
+.w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0
+}
+
+.banner {
+    position: relative;
+    .slide-show-icon {
+        position: absolute;
+        top: 83%;
+        left: 20%;
+        .icon-slide {
+            height: 10px;
+            width: 10px;
+            padding: 0;
+            background-color: transparent;
+            border-radius: 50%;
+            color: #fff;
+            display: inline-block;
+            border: 1px solid #ccc;
+        }
+        .w3-white {
+            background-color: #ffffff;
+        }
+    }
+    .text-content {
+        font-size: 60px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 50%;
+        color: #ffffff;
+    }
+    .text-reverse {
+        position: absolute;
+        top: 80%;
+        right: 10%;
+        color: #ffffff;
+        transform: rotate(90deg);
+        display: flex;
+        div{
+            transform: rotateZ(180deg);
+        }
+    }
+    .icon-slide-after{
+    width: 3px;
+    height: 10px;
+    background:#dab279;
+    display: inline-block;
+    }
+    @media only screen and(max-width:1250px){
+    .text-content{
+        font-size: 40px;
+    }
+    .text-reverse {
+        top:75%;
+
+    }
+}
+@media only screen and(max-width:825px){
+    .text-content{
+        font-size: 18px;
+        width: 56%;
+    }
+    .text-reverse {
+        top:70%;
+        font-size: 8px;
+        img{
+            height: 11px;
+        }
+    }
+}
+}
+

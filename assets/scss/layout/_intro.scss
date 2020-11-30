@@ -1,0 +1,120 @@
+.button {
+    color: #ffffff;
+    background: #4c6ea9;
+    border-radius: 3.2rem;
+    padding: 0.5rem 2rem;
+    border: none;
+}
+
+.btn-see-more {
+    background-color: #404040;
+    color: #dab279;
+    font-size: 14px;
+}
+
+.btn-buy-course {
+    background-color: #cb9644;
+    color: #ffffff;
+}
+
+.intro {
+    .intro-aboutUs {
+        .text-about {
+            max-width: 55%;
+            padding: 6.25rem 6.26rem 0 12rem;
+            h2 {
+                padding-bottom: 2rem;
+            }
+            span {
+                content: '';
+                left: 0;
+                width: 50%;
+                height: 5px;
+                background-color: #e5e5e5;
+                position: absolute;
+            }
+            span:after {
+                content: '';
+                width: 13%;
+                height: 5px;
+                background-color: #dab279;
+                position: absolute;
+                left: 12rem;
+            }
+            p {
+                line-height: 22px;
+                padding-top: 2rem;
+                font-size: 24px;
+            }
+        }
+        .intro-img {
+            max-width: 45%;
+            float: right;
+        }
+    }
+    .intro-course {
+        position: relative;
+        .text-course {
+            max-width: 45%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: rgba($color: #343434, $alpha: 0.8);
+            min-height: 100%;
+            color: rgba($color: #ffffff, $alpha: 0.8);
+            padding: 6.25rem 12rem 0 2rem;
+            .crossbar {
+                content: '';
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background-color: rgba($color: #ffffff, $alpha: 0.8);
+                position: absolute;
+                &:after {
+                    content: '';
+                    width: 13%;
+                    height: 5px;
+                    background-color: #dab279;
+                    position: absolute;
+                    left: 2rem;
+                }
+            }
+            h2 {
+                padding-bottom: 2rem;
+            }
+            p {
+                padding: 2rem 0;
+            }
+        }
+    }
+}
+
+.slick-dots {
+    z-index: 9999;
+    display: flex;
+    position: absolute;
+    right: 20%;
+    margin: 0;
+    list-style: none;
+    bottom: 40px;
+    li {
+        margin: 0 0.25rem;
+        background-color: transparent;
+        border-radius: 50%;
+        button {
+            font-size: 0;
+            height: 10px;
+            width: 10px;
+            padding: 0;
+            background-color: transparent;
+            border-radius: 50%;
+            color: #fff;
+            display: block;
+            border: 1px solid #ccc;
+        }
+    }
+    li.slick-active button {
+        background-color: #fff;
+        outline: none;
+    }
+}

@@ -6,32 +6,154 @@
 <!--[if IE 8]>
 <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang=""> <!--<![endif]-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="Content-Language" content="en-us"/>
+    <meta http-equiv="Content-Language" content="en-us" />
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 </head>
+
 <body>
+    <section class="banner">
+        <div class="slide-show">
+            <img class="mySlides" src="assets/img/banner.png">
+            <img class="mySlides" src="assets/img/banner.png">
+            <img class="mySlides" src="assets/img/banner.png">
+            <div class="slide-show-icon">
+                <span class="icon-slide w3-white" onclick="currentDiv(1)"></span>
+                <span class="icon-slide" onclick="currentDiv(2)"></span>
+                <span class="icon-slide" onclick="currentDiv(3)"></span>
+                <span class="icon-slide" onclick="currentDiv(4)"></span>
+                <span class="icon-slide" onclick="currentDiv(5)"></span>
+                <span class="icon-slide" onclick="currentDiv(6)"></span>
+                <span class="icon-slide-after"></span>
+                <span class="icon-slide-after"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-content">
+                <p><b>KHAI MỞ TRÍ TUỆ THÀNH CÔNG</b></p>
+                <p>SỨ MỆNH NÂNG TẦM NGƯỜI VIỆT TRẺ </p>
+            </div>
+            <div class="text-reverse">
+                <div>Kéo xuống</div>
+                <img src="assets/img/arrow-down.png">
+            </div>
+        </div>
+    </section>
+    <section class="intro ">
+        <div class="intro-aboutUs d-flex">
+            <div class="text-about">
+                <h2>Về chúng tôi</h2>
+                <span class="crossbar"></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas...</p>
+                <p style="font-size: 14px;" class="pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                <button class="button btn-see-more">XEM THÊM</button>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/intro-1.png" alt="about-us">
+            </div>
+        </div>
+        <div class="intro-course">
+            <div class="slick">
+                <div><img src="assets/img/intro-2.png" alt="course"></div>
+                <div><img src="assets/img/intro-2.png" alt="course"></div>
+                <div><img src="assets/img/intro-2.png" alt="course"></div>
+            </div>
+            <div class="text-course">
+                <h2>Khóa học & sự kiện</h2>
+                <span class="crossbar"></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                <button class="button btn-buy-course">MUA KHÓA HỌC</button>
+            </div>
+        </div>
+    </section>
+    <section class="book">
+        <div class="container ">
+            <h2>Sách</h2>
+            <div class="col-md-4">
+                <img src="assets/img/book1.png" alt="">
+                <p>Lập trình ngôn ngữ tư duy</p>
+                <span>1200000<sub>đ</sub></span>
+                <button>Mua ngay</button>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/img/book1.png" alt="">
+                <p>Lập trình ngôn ngữ tư duy</p>
+                <span>1200000<sub>đ</sub></span>
+                <button>Mua ngay</button>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/img/book1.png" alt="">
+                <p>Lập trình ngôn ngữ tư duy</p>
+                <span>1200000<sub>đ</sub></span>
+                <button>Mua ngay</button>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/img/book1.png" alt="">
+                <p>Lập trình ngôn ngữ tư duy</p>
+                <span>1200000<sub>đ</sub></span>
+                <button>Mua ngay</button>
+            </div>
+        </div>
+
+    </section>
 
 
 
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
-<script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
-<script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
+    </script>
+
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
-</html>
 
+</html>
