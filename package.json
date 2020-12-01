@@ -1,0 +1,22 @@
+{
+  "name": "smart-money",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nodesass" : "node-sass assets/scss/main.scss assets/css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phantra263/smart-money.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phantra263/smart-money/issues"
+  },
+  "homepage": "https://github.com/phantra263/smart-money#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
