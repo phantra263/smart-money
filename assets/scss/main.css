@@ -7709,4 +7709,29 @@ img {
   background-color: #fff;
   outline: none;
 }
+
+#book .container {
+  position: relative;
+}
+
+#book .slick-book-prev {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+#book .slick-book-prev i {
+  width: 50px;
+  height: 50px;
+  background: #ebebeb;
+  border-radius: 50%;
+}
+
+#book .slick-book-next {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
 /*# sourceMappingURL=main.css.map */

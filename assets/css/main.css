@@ -1121,7 +1121,7 @@
   line-height: 1; }
 
 .fa-lg {
-  font-size: 1.3333333333em;
+  font-size: 1.33333em;
   line-height: 0.75em;
   vertical-align: -.0667em; }
 
@@ -1196,6 +1196,7 @@
 .fal.fa-pull-left,
 .fab.fa-pull-left {
   margin-right: .3em; }
+
 .fa.fa-pull-right,
 .fas.fa-pull-right,
 .far.fa-pull-right,
@@ -1214,6 +1215,7 @@
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   transform: rotate(90deg); }
@@ -5286,6 +5288,7 @@ readers do not read off random characters that represent icons */
   font-weight: normal;
   src: url("../fonts/fa-brands-400.eot");
   src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
 
@@ -5299,6 +5302,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   src: url("../fonts/fa-solid-900.eot");
   src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
@@ -5333,3 +5337,169 @@ h1, h2, h3, h4, h5 {
 
 img {
   max-width: 100%; }
+
+.mySlides {
+  display: none; }
+
+.w3-left,
+.w3-right,
+.w3-badge {
+  cursor: pointer; }
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0; }
+
+.banner {
+  position: relative; }
+  .banner .slide-show-icon {
+    position: absolute;
+    top: 83%;
+    left: 20%; }
+    .banner .slide-show-icon .icon-slide {
+      height: 10px;
+      width: 10px;
+      padding: 0;
+      background-color: transparent;
+      border-radius: 50%;
+      color: #fff;
+      display: inline-block;
+      border: 1px solid #ccc; }
+    .banner .slide-show-icon .w3-white {
+      background-color: #ffffff; }
+  .banner .text-content {
+    font-size: 60px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 50%;
+    color: #ffffff; }
+  .banner .text-reverse {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    color: #ffffff;
+    transform: rotate(90deg);
+    display: flex; }
+    .banner .text-reverse div {
+      transform: rotateZ(180deg); }
+  .banner .icon-slide-after {
+    width: 3px;
+    height: 10px;
+    background: #dab279;
+    display: inline-block; }
+  @media only screen and (max-width: 1250px) {
+    .banner .text-content {
+      font-size: 40px; }
+    .banner .text-reverse {
+      top: 75%; } }
+  @media only screen and (max-width: 825px) {
+    .banner .text-content {
+      font-size: 18px;
+      width: 56%; }
+    .banner .text-reverse {
+      top: 70%;
+      font-size: 8px; }
+      .banner .text-reverse img {
+        height: 11px; } }
+
+.button {
+  color: #ffffff;
+  background: #4c6ea9;
+  border-radius: 3.2rem;
+  padding: 0.5rem 2rem;
+  border: none; }
+
+.btn-see-more {
+  background-color: #404040;
+  color: #dab279;
+  font-size: 14px; }
+
+.btn-buy-course {
+  background-color: #cb9644;
+  color: #ffffff; }
+
+.intro .intro-aboutUs .text-about {
+  max-width: 55%;
+  padding: 6.25rem 6.26rem 0 12rem; }
+  .intro .intro-aboutUs .text-about h2 {
+    padding-bottom: 2rem; }
+  .intro .intro-aboutUs .text-about span {
+    content: '';
+    left: 0;
+    width: 50%;
+    height: 5px;
+    background-color: #e5e5e5;
+    position: absolute; }
+  .intro .intro-aboutUs .text-about span:after {
+    content: '';
+    width: 13%;
+    height: 5px;
+    background-color: #dab279;
+    position: absolute;
+    left: 12rem; }
+  .intro .intro-aboutUs .text-about p {
+    line-height: 22px;
+    padding-top: 2rem;
+    font-size: 24px; }
+
+.intro .intro-aboutUs .intro-img {
+  max-width: 45%;
+  float: right; }
+
+.intro .intro-course {
+  position: relative; }
+  .intro .intro-course .text-course {
+    max-width: 45%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(52, 52, 52, 0.8);
+    min-height: 100%;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 6.25rem 12rem 0 2rem; }
+    .intro .intro-course .text-course .crossbar {
+      content: '';
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background-color: rgba(255, 255, 255, 0.8);
+      position: absolute; }
+      .intro .intro-course .text-course .crossbar:after {
+        content: '';
+        width: 13%;
+        height: 5px;
+        background-color: #dab279;
+        position: absolute;
+        left: 2rem; }
+    .intro .intro-course .text-course h2 {
+      padding-bottom: 2rem; }
+    .intro .intro-course .text-course p {
+      padding: 2rem 0; }
+
+.slick-dots {
+  z-index: 9999;
+  display: flex;
+  position: absolute;
+  right: 20%;
+  margin: 0;
+  list-style: none;
+  bottom: 40px; }
+  .slick-dots li {
+    margin: 0 0.25rem;
+    background-color: transparent;
+    border-radius: 50%; }
+    .slick-dots li button {
+      font-size: 0;
+      height: 10px;
+      width: 10px;
+      padding: 0;
+      background-color: transparent;
+      border-radius: 50%;
+      color: #fff;
+      display: block;
+      border: 1px solid #ccc; }
+  .slick-dots li.slick-active button {
+    background-color: #fff;
+    outline: none; }

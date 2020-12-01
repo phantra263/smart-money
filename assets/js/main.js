@@ -9,4 +9,18 @@ $(document).ready(function() {
         pauseOnDotsHover: false,
         pauseOnHover: false,
     });
+    $('.slick-book').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        dots:true,
+        arrows: false,
+    });
+    $('.slick-book-prev').click(function(){
+        $('.slick-book').slick("slickPrev");
+      })
+       
+    $('.slick-book-next').click(function(){
+        $('.slick-book').slick("slickNext");
+    })
 });

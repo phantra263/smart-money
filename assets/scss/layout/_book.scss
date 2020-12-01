@@ -1,0 +1,28 @@
+#book{
+    .container{
+        position: relative;
+    }
+    .slick-book-prev{
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        i{
+            width: 50px;
+            height: 50px;
+            background: #ebebeb;
+            border-radius: 50%;
+        }
+      
+    }
+    .slick-book-next{
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    .slick-book{
+
+    }
+    
+}
