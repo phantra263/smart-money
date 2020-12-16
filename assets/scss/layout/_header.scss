@@ -57,7 +57,7 @@ header {
     }
 }
 
-@media screen and (max-width:999px) {
+@media screen and (max-width:768px) {
     body {
         overflow-x: hidden;
     }
@@ -67,8 +67,8 @@ header {
                 .menu__nav {
                     right: 0;
                     position: absolute;
-                    min-height: 70vh;
-                    top: 13vh;
+                    min-height: 59vh;
+                    top: 12vh;
                     background: #404040;
                     display: flex;
                     flex-direction: column;
@@ -89,19 +89,6 @@ header {
     }
     .nav__active {
         transform: translateX(0%) !important;
-    }
-}
-
-@media screen and (max-width:999px) {
-    header {
-        .container {
-            nav {
-                .menu__nav {
-                    top: 12vh;
-                    min-height: 59px;
-                }
-            }
-        }
     }
 }
 
