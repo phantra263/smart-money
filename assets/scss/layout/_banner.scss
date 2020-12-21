@@ -16,6 +16,11 @@
 
 .banner {
     position: relative;
+    .slide-show-img{
+        img{
+            width: 100%;
+        }
+    }
     .slide-show-icon {
         position: absolute;
         top: 83%;
@@ -38,14 +43,17 @@
         font-size: 60px;
         position: absolute;
         top: 10%;
-        left: 10%;
-        width: 50%;
+        left: 20.5%;
+        width: 38%;
         color: #ffffff;
+        @media #{$info-tablet-horizontal} {
+            left: 7%;
+        }
     }
     .text-reverse {
         position: absolute;
         top: 80%;
-        right: 10%;
+        right: 15%;
         color: #ffffff;
         transform: rotate(90deg);
         display: flex;

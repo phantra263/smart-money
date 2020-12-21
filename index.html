@@ -27,19 +27,7 @@
 <body>
     <section class="banner">
         <div class="slide-show">
-            <img class="mySlides" src="assets/img/banner.png">
-            <img class="mySlides" src="assets/img/banner.png">
-            <img class="mySlides" src="assets/img/banner.png">
-            <div class="slide-show-icon">
-                <span class="icon-slide w3-white" onclick="currentDiv(1)"></span>
-                <span class="icon-slide" onclick="currentDiv(2)"></span>
-                <span class="icon-slide" onclick="currentDiv(3)"></span>
-                <span class="icon-slide" onclick="currentDiv(4)"></span>
-                <span class="icon-slide" onclick="currentDiv(5)"></span>
-                <span class="icon-slide" onclick="currentDiv(6)"></span>
-                <span class="icon-slide-after"></span>
-                <span class="icon-slide-after"></span>
-            </div>
+            <div class="slide-show-img"><img src="assets/img/banner.png" alt=""></div>
         </div>
         <div class="container">
             <div class="text-content">
@@ -53,16 +41,15 @@
         </div>
     </section>
     <section class="intro ">
-        <div class="intro-aboutUs d-flex">
-            <div class="text-about">
-                <h2>Về chúng tôi</h2>
-                <span class="crossbar"></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas...</p>
-                <p style="font-size: 14px;" class="pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                <button class="button btn-see-more">XEM THÊM</button>
-            </div>
-            <div class="intro-img">
-                <img src="assets/img/intro-1.png" alt="about-us">
+        <div class="intro-aboutUs ">
+            <div class="text-about container">
+                <div class="text-about-us">
+                    <h2>Về chúng tôi</h2>
+                    <span class="crossbar"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas...</p>
+                    <p style="font-size: 14px;" class="pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    <button class="button btn-see-more">XEM THÊM</button>
+                </div>
             </div>
         </div>
         <div class="intro-course">
@@ -71,7 +58,7 @@
                 <div><img src="assets/img/intro-2.png" alt="course"></div>
                 <div><img src="assets/img/intro-2.png" alt="course"></div>
             </div>
-            <div class="text-course">
+            <div class="text-course container">
                 <h2>Khóa học & sự kiện</h2>
                 <span class="crossbar"></span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
@@ -82,40 +69,294 @@
     <section id="book">
         <div class="container">
             <h2>Sách</h2>
-            <li class="slick-book-prev"><i class="fas fa-angle-double-left"></i></li>
-            <div class="slick-book container">
+            <hr>
+            <div class="slick-book-prev"><i class="fas fa-angle-double-left"></i></div>
+            <div class="slick-book row">
                 <div class="col-md-2">
-                    <img src="assets/img/book1.png" alt="">
-                    <p>Lập trình ngôn ngữ tư duy</p>
-                    <span>1200000<sub>đ</sub></span>
-                    <button>Mua ngay</button>
+                    <div class="slick-book-wrap">
+                        <img class="slick-book-img" src="assets/img/book4.png" alt="">
+                        <p>Lập trình ngôn ngữ tư duy</p>
+                        <span>1200000<sup>đ</sup></span>
+                    </div>
+                    <button class="btn-buy">Mua ngay</button>
                 </div>
                 <div class="col-md-2">
-                    <img src="assets/img/book1.png" alt="">
-                    <p>Lập trình ngôn ngữ tư duy</p>
-                    <span>1200000<sub>đ</sub></span>
-                    <button>Mua ngay</button>
+                    <div class="slick-book-wrap">
+                        <img class="slick-book-img" src="assets/img/book3.png" alt="">
+                        <p>Lập trình ngôn ngữ tư duy</p>
+                        <span>1200000<sup>đ</sup></span>
+                        <span class="new-mark"></span>
+                    </div>
+                    <button class="btn-buy">Mua ngay</button>
                 </div>
                 <div class="col-md-2">
-                    <img src="assets/img/book1.png" alt="">
-                    <p>Lập trình ngôn ngữ tư duy</p>
-                    <span>1200000<sub>đ</sub></span>
-                    <button>Mua ngay</button>
+                    <div class="slick-book-wrap">
+                        <img class="slick-book-img" src="assets/img/book4.png" alt="">
+                        <p>Lập trình ngôn ngữ tư duy</p>
+                        <span>1200000<sup>đ</sup></span>
+                        <span class="new-mark"></span>
+                    </div>
+                    <button class="btn-buy">Mua ngay</button>
                 </div>
                 <div class="col-md-2">
-                    <img src="assets/img/book1.png" alt="">
-                    <p>Lập trình ngôn ngữ tư duy</p>
-                    <span>1200000<sub>đ</sub></span>
-                    <button>Mua ngay</button>
+                    <div class="slick-book-wrap">
+                        <img class="slick-book-img" src="assets/img/book4.png" alt="">
+                        <p>Lập trình ngôn ngữ tư duy</p>
+                        <span>1200000<sup>đ</sup></span>
+                    </div>
+                    <button class="btn-buy">Mua ngay</button>
                 </div>
                 <div class="col-md-2">
-                    <img src="assets/img/book1.png" alt="">
-                    <p>Lập trình ngôn ngữ tư duy</p>
-                    <span>1200000<sub>đ</sub></span>
-                    <button>Mua ngay</button>
+                    <div class="slick-book-wrap">
+                        <img class="slick-book-img" src="assets/img/book3.png" alt="">
+                        <p>Lập trình ngôn ngữ tư duy</p>
+                        <span>1200000<sup>đ</sup></span>
+                    </div>
+                    <button class="btn-buy">Mua ngay</button>
+                </div>
+                <div class="col-md-2">
+                    <div class="slick-book-wrap">
+                        <img class="slick-book-img" src="assets/img/book4.png" alt="">
+                        <p>Lập trình ngôn ngữ tư duy</p>
+                        <span>1200000<sup>đ</sup></span>
+                    </div>
+                    <button class="btn-buy">Mua ngay</button>
                 </div>
             </div>
-            <li class="slick-book-next"><i class="fas fa-angle-double-right"></i></li>
+            <div class="slick-book-next"><i class="fas fa-angle-double-right"></i></div>
+        </div>
+    </section>
+    <section class="course">
+        <div class="menu-course container row">
+            <a class="card-course col-3">
+                <div><img src="assets/img/ico1.png" alt=""></div>
+                <p>Khóa học</p>
+            </a>
+            <a class="card-course col-3">
+                <img src="assets/img/ico2.png" alt="">
+                <p>Videos</p>
+            </a>
+            <a class="card-course col-3">
+                <img src="assets/img/ico3.png" alt="">
+                <p>Audios</p>
+            </a>
+            <a class="card-course col-3">
+                <img src="assets/img/ico4.png" alt="">
+                <p>Ebook</p>
+            </a>
+        </div>
+    </section>
+    <section class="infor-course">
+        <div class="container">
+            <div class="title-course">
+                <h2>Khóa học online</h2>
+                <ul class="order" id="order-btn">
+                    <li class="order-btn active-order"><a onclick="filterSelection('view-filter')"><i class="fas fa-eye"></i>Xem nhiều nhất</a></li>
+                    <li class="order-btn"><a onclick="filterSelection('new-filter')"><i class="far fa-bookmark"></i>Mới nhất</a></li>
+                    <li class="order-btn"><a onclick="filterSelection('care-filter')"><i class="fas fa-thumbs-up"></i>Được quan tâm</a></li>
+                    <li class="order-btn"><a onclick="filterSelection('like-filter')"><i class="fab fa-google-wallet"></i>Miễn phí</a></li>
+                </ul>
+            </div>
+            <hr class="hr-title">
+            <div class="detail-course">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-3 filterDiv view-filter new-filter">
+                        <div class="detail-course-wrap">
+                            <img class="img-course" src="assets/img/detail-course1.png" alt="">
+                            <div class="text-descrip">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <p>Những Mô Thức Đột Phá Thành Công - Hạnh Phúc</p>
+                                <span class="text-dark">600,000<sup>đ</sup></span>
+                                <span class="new-mark"></span>
+                            </div>
+                            <hr class="p-0">
+                            <div class="interactive-number">
+                                <img src="assets/img/people-1.png" alt="">
+                                <span class="text-dark"><b>Phương Nguyễn</b></span>
+                                <span><i class="fas fa-user-friends"></i>12,321</span>
+                                <span><i class="fas fa-heart"></i>123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 filterDiv view-filter">
+                        <div class="detail-course-wrap">
+                            <img class="img-course" src="assets/img/detail-course2.png" alt="">
+                            <div class="text-descrip">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <p>Những Mô Thức Đột Phá Thành Công - Hạnh Phúc</p>
+                                <span class="text-dark">600,000<sup>đ</sup></span>
+                            </div>
+                            <hr class="p-0">
+                            <div class="interactive-number">
+                                <img src="assets/img/people-1.png" alt="">
+                                <span class="text-dark"><b>Phương Nguyễn</b></span>
+                                <span><i class="fas fa-user-friends"></i>12,321</span>
+                                <span><i class="fas fa-heart"></i>123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 filterDiv view-filter new-filter care-filter">
+                        <div class="detail-course-wrap">
+                            <img class="img-course" src="assets/img/detail-course3.png" alt="">
+                            <div class="text-descrip">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <p>Những Mô Thức Đột Phá Thành Công - Hạnh Phúc</p>
+                                <span class="text-dark">600,000<sup>đ</sup></span>
+                                <span class="new-mark"></span>
+                            </div>
+                            <hr class="p-0">
+                            <div class="interactive-number">
+                                <img src="assets/img/people-1.png" alt="">
+                                <span class="text-dark"><b>Phương Nguyễn</b></span>
+                                <span><i class="fas fa-user-friends"></i>12,321</span>
+                                <span><i class="fas fa-heart"></i>123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 filterDiv view-filter new-filter">
+                        <div class="detail-course-wrap">
+                            <img class="img-course" src="assets/img/detail-course4.png" alt="">
+                            <div class="text-descrip">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <p>Những Mô Thức Đột Phá Thành Công - Hạnh Phúc</p>
+                                <span class="text-dark">600,000<sup>đ</sup></span>
+                                <span class="new-mark"></span>
+                            </div>
+                            <hr class="p-0">
+                            <div class="interactive-number">
+                                <img src="assets/img/people-1.png" alt="">
+                                <span class="text-dark"><b>Phương Nguyễn</b></span>
+                                <span><i class="fas fa-user-friends"></i>12,321</span>
+                                <span><i class="fas fa-heart"></i>123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 filterDiv view-filter new-filter care-filter">
+                        <div class="detail-course-wrap">
+                            <img class="img-course" src="assets/img/detail-course1.png" alt="">
+                            <div class="text-descrip">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <p>Những Mô Thức Đột Phá Thành Công - Hạnh Phúc</p>
+                                <span class="text-dark">600,000<sup>đ</sup></span>
+                            </div>
+                            <hr class="p-0">
+                            <div class="interactive-number">
+                                <img src="assets/img/people-1.png" alt="">
+                                <span class="text-dark"><b>Phương Nguyễn</b></span>
+                                <span><i class="fas fa-user-friends"></i>12,321</span>
+                                <span><i class="fas fa-heart"></i>123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 filterDiv view-filter">
+                        <div class="detail-course-wrap">
+                            <img class="img-course" src="assets/img/detail-course2.png" alt="">
+                            <div class="text-descrip">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <p>Những Mô Thức Đột Phá Thành Công - Hạnh Phúc</p>
+                                <span class="text-dark">600,000<sup>đ</sup></span>
+                            </div>
+                            <hr class="p-0">
+                            <div class="interactive-number">
+                                <img src="assets/img/people-1.png" alt="">
+                                <span class="text-dark"><b>Phương Nguyễn</b></span>
+                                <span><i class="fas fa-user-friends"></i>12,321</span>
+                                <span><i class="fas fa-heart"></i>123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 filterDiv view-filter new-filter like-filter">
+                        <div class="detail-course-wrap">
+                            <img class="img-course" src="assets/img/detail-course3.png" alt="">
+                            <div class="text-descrip">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <p>Những Mô Thức Đột Phá Thành Công - Hạnh Phúc</p>
+                                <span class="text-dark">600,000<sup>đ</sup></span>
+                            </div>
+                            <hr class="p-0">
+                            <div class="interactive-number">
+                                <img src="assets/img/people-1.png" alt="">
+                                <span class="text-dark"><b>Phương Nguyễn</b></span>
+                                <span><i class="fas fa-user-friends"></i>12,321</span>
+                                <span><i class="fas fa-heart"></i>123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 filterDiv care-filter view-filter">
+                        <div class="detail-course-wrap">
+                            <img class="img-course" src="assets/img/detail-course4.png" alt="">
+                            <div class="text-descrip">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <p>Những Mô Thức Đột Phá Thành Công - Hạnh Phúc</p>
+                                <span class="text-dark">600,000<sup>đ</sup></span>
+                            </div>
+                            <hr class="p-0">
+                            <div class="interactive-number">
+                                <img src="assets/img/people-1.png" alt="">
+                                <span class="text-dark"><b>Phương Nguyễn</b></span>
+                                <span><i class="fas fa-user-friends"></i>12,321</span>
+                                <span><i class="fas fa-heart"></i>123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 filterDiv care-filter like-filter">
+                        <div class="detail-course-wrap">
+                            <img class="img-course" src="assets/img/detail-course4.png" alt="">
+                            <div class="text-descrip">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <p>Những Mô Thức Đột Phá Thành Công - Hạnh Phúc</p>
+                                <span class="text-dark">600,000<sup>đ</sup></span>
+                            </div>
+                            <hr class="p-0">
+                            <div class="interactive-number">
+                                <img src="assets/img/people-1.png" alt="">
+                                <span class="text-dark"><b>Phương Nguyễn</b></span>
+                                <span><i class="fas fa-user-friends"></i>12,321</span>
+                                <span><i class="fas fa-heart"></i>123</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="show-more">
+                <span>Xem tất cả<i class="fas fa-chevron-right"></i></span>
+            </div>
         </div>
     </section>
 
@@ -123,41 +364,8 @@
 
     <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
+your browser</a> to improve your experience.</p>
 <![endif]-->
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            if (n > x.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = x.length
-            }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-white", "");
-            }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-white";
-        }
-    </script>
-
     <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
