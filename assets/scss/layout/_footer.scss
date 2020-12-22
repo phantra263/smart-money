@@ -1,0 +1,55 @@
+footer {
+    background-image: url(/assets/img/Layer11.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .container {
+        position: relative;
+        left: 35vw;
+        .contact {
+            float: right;
+            padding-top: 2.25rem;
+            &__about {
+                font-size: 14px;
+            }
+            &__link {
+                justify-content: space-between;
+                .button-contact {
+                    @media #{$info-phone} {
+                        font-size: 7px;
+                    }
+                    .button {
+                        color: #ffffff;
+                        background: #4c6ea9;
+                        border-radius: 3.2rem;
+                        padding: 0.5rem 2rem;
+                        border: none;
+                    }
+                    .btn--fb {
+                        background: #4c6ea9;
+                    }
+                    .btn--gg {
+                        background: #ff5838;
+                    }
+                    .btn--youtube {
+                        background: #dc3833;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    footer {
+        .container {
+            position: relative;
+            left: 0;
+        }
+    }
+}
+
+.f-18 {
+    font-size: 18px;
+    font-weight: 300;
+}
