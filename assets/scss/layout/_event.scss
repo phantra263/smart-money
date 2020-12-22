@@ -1,0 +1,77 @@
+.event {
+    background-image: url('/assets/img/event.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 47% 100%;
+    @media #{$info-tablet-vertical} {
+        background-size: 100% 40%;
+        background-position: top;
+    }
+    .container {
+        padding: 100px 0 65px;
+        display: flex;
+        .text-classified {
+            align-self: flex-end;
+            padding-left: 72px;
+            @media #{$info-tablet-vertical} {
+                padding: 0 15px 100px;
+            }
+            small {
+                color: #cb9643;
+            }
+            p {
+                font-size: 24px;
+                color: #ffffff;
+                margin: 22px auto 47px;
+            }
+        }
+        .text-event-off {
+            .hr-underh2 {
+                height: 4px;
+                background-color: #ebebeb;
+                border: 0;
+                &::after {
+                    content: '';
+                    background-color: #cb9643;
+                    height: 4px;
+                    position: absolute;
+                    width: 10%;
+                    left: 16px;
+                }
+            }
+            .detail-event {
+                display: flex;
+                color: #a8a8a8;
+                align-items: baseline;
+                .calender {
+                    margin-right: 18px;
+                    max-height: 72px;
+                    background-color: #f8f8f8;
+                    font-size: 24px;
+                    padding: 0 15px;
+                    .color-day {
+                        color: #cb9643;
+                    }
+                    hr {
+                        margin: 0;
+                    }
+                }
+                .txt-descrip-event {
+                    .mark-free {
+                        background-color: #cb9643;
+                        padding: 11px 22px;
+                        color: #ffffff;
+                        font-weight: bold;
+                    }
+                    a {
+                        i {
+                            color: #cb9643;
+                            font-size: 14px;
+                            padding-left: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
