@@ -134,6 +134,8 @@ for (var i = 0; i < btns.length; i++) {
         this.className += " active-order";
     });
 }
+
+
 const navSlide = () => {
     const icon = document.querySelector('.icon');
     const nav = document.querySelector('.menu__nav');
